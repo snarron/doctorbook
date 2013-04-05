@@ -1,35 +1,15 @@
-Dr. Book
+Dr. Book Repo
 ==========
-For any book authored using the Docbook XML structure (http://docbook.org/tdg51/en/html/) we will extract people, places, topics and concepts to render a webpage linking these resources to Open Data resources such as Freebase (wikipedia), OpenStreetMap, and Flickr. We will use Pandas to do text analysis on the book to produce a word cloud and answer other questions about the text.
 
-What open data sets might you be working with?
-Resources:
-Base: eBook in structured Docbook XML
-Linked Data: DBPedia - API,
-Freebase
-OpenMaps
-Flickr
+To work on Dr. Book:
+-----------------
+1. Copy DoctorBookParse.ipynb and rename it 
+2. Make your changes and commit
+3. Push to your Github and send a pull request
+4. We'll use notebooks to compare each others work and then merge it when we pull the code together
 
-Possible ties to Wikipedia (or any Wikimedia related projects)?
-We will use Freebase and OpenStreeMap
-
-What are some concrete immediate first/next steps in your projects?
-Finding parts of text to link to wikipedia
-Resolving text to wikipedia entries
-
-What challenges do you anticipate running into?
-Learning to access APIs
-Data mashups
-Front-end design / structure / d3 visualization
-
-What skills will a team need to develop to solve this problem?
-Database management, visualization, statistical analysis, extensive JavaScript knowledge (backbone.js)
-
-Application Structure:
-  Back-end:
-		Database - MarkLogic, BaseX
-		Python Flask WebServer
-		Semantic analysis - Python NLTK (Natural Language Toolkit)
-	Front-end:
-		Backbone.js (MVC)
-		d3.js (visualization & interaction)
+Current Tasks:
+----------------
+1. For a term in our DataFrame, write a function that fetches it's wikipedia url (if it has one)
+2. Find important terms in the document text (not inside of tags)
+3. How to Save/Load DataFrame for use with webserver
